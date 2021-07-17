@@ -1,0 +1,43 @@
+From:	Patricia Haden <Patricia.Haden@op.ac.nz>
+Sent:	Saturday, 18 May 2013 10:44 a.m.
+To:	Jeff Miller
+Subject:	Dynamic content generation demo attached
+
+Hi:
+
+Here are replacement files for all the main html pages, the css file and the js file. These are all wired up 
+to work together. (The Software page and Javascript file also have the show/hide functionality stuff; see 
+earlier mailing.)
+
+In these pages, the nav buttons are not in the HTML (go and look, they're not there....). They are created 
+dynamically when each page opens. In jom.js, you can see the code for doing this. It is commented, and I 
+think it should be pretty clear. (Just let me know if not.)
+
+The process shown -- of creating elements, configuring them, and attaching them to the HTML tree -- 
+can be used to generate any content you wish. For example, you can take exactly the same approach to 
+building that <address> element at the bottom, or the name/affiliation text in the banner, or whatever. I 
+chose to do this one because it works off a little array, so you can see how that is done in JS.
+
+So this is all cool, but do be aware that users who can't run JavaScript (really old browsers, really cheap 
+phones, extremely suspicious people) will just see an empty space. It is easy to provide a fallback for 
+them, but I haven't bothered with that yet (it's pretty unlikely that anyone accessing your website will 
+be in any of these categories, but it's something to think about eventually).
+
+I hope you are seeing my "only doing bits of it" approach as "teach a man to fish", not "That's enough 
+web dev for now, I want to go watch White Collar".
+
+Enjoy - P
+
+####################
+Patricia Haden
+Principal Lecturer - School of Information Technology Otago Polytechnic New Zealand
+
+"A society grows great when old men plant trees whose shade they know they shall never sit in." - Greek 
+Proverb
+
+______________________________________________________________________________
+
+This email has been scrubbed for your protection by SMX.
+For more information visit http://smxemail.com 
+______________________________________________________________________________
+

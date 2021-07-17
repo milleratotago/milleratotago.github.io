@@ -1,0 +1,1112 @@
+﻿<html>
+<!-- NEWJEFF: Remember, exe files must be zipped. -->
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <link rel="stylesheet" href="jom.css"/>
+   <script src="jom.js"></script>
+</head>
+
+<body>
+
+<div id="container">
+   <div id="header">
+   </div> <!-- end div id="header" -->
+
+   <!-- Nav Controls Added Dynamically From JavaScript -->
+   <div id="toc">
+   </div> <!-- end div id="toc" -->
+
+   <div id="hiddenlink">
+      <a href="https://www.otago.ac.nz/staffmail" target="_blank">*</a><br>
+   </div>
+
+   <div id="software">
+      <h2>Free Software</h2>
+      These programs run on IBM-compatible computers running Windows, and some also have DOS versions.
+      They are provided free for educational and noncommercial use.
+      For commercial use, contact the author.
+      <span class="warning">Use them at your own risk -- no warranty is expressed or implied. </span>
+
+      <ul>
+	 <li>Statistical software:
+	 <ul>
+	    <li>
+	    <a href="#" name="AnoGen"></a>	<!-- anchor for page on show/hide to prevent jumping to top -->
+	    <em>AnoGen: </em>A program to generate datasets for ANOVA practice problems and examples.
+	    <p>
+	       <!-- Calls toggle_visibility method on the furtherDescription div. Method defined in jom.js -->
+	       <a href="#Anogen" onclick="toggle_visibility('AnoGenFurther');">Further description.</a>-- 
+	       <a href="progs/anogen.zip" target="_blank">Download.</a>
+
+	       <!-- This div contains the further description text. Class is required; id must match arg of onclick handler above -->
+	       <div id="AnoGenFurther" class="furtherDescriptionText">
+		  <p>
+		     This program was designed for use in teaching and learning the statistical
+		     procedure known as <i>Analysis of Variance </i> (ANOVA).
+		     It generates example data sets with answers.
+		     It can handle between-subjects, within-subjects, and mixed designs
+		     with up to six factors.
+		  </p>
+		  <p>
+		     The program can be run in either of two modes:
+		     one designed for use by students; the other, by teachers.
+		  </p>
+		  <UL>
+		     <LI>
+			In student mode, the user simply specifies the experimental design, and AnoGen
+			generates an appropriate random data set with answers.
+			Thus, students can get unlimited amounts of computational practice.
+		     </LI>
+		     <LI>
+			In teacher mode, the user specifies not only the experimental design but also
+			the the cell means and error variance(s).
+			This mode is suited to constructing example data sets with a particular
+			story in mind (i.e., generating specific factor effects and interactions).
+			Considerable familiarity with ANOVA is needed to use this mode, however.
+		     </LI>
+		  </UL>
+		  <p>
+		     The DOS-executable program comes with extensive documentation in
+		     a variety of formats, including postscript and Adobe PDF.
+		     The program and its documentation may be duplicated and used
+		     without charge for any educational or noncommercial purposes.
+		  </p>					
+		  <!-- Link to hide the further description div. Note use of href to prevent jump to top of page -->
+		  <a href="#AnoGen" onclick="toggle_visibility('AnoGenFurther');">Hide Description...</a>
+	       </div> <!-- end div id="AnoGenFurther" -->
+	    </p>
+	    </li>
+
+	    <li>
+	       <a href="#" name="RegGen"></a>
+	       <em>RegGen: </em>A program to generate datasets for regression &amp; ANCOVA practice problems and examples.
+	       <p>
+		  <a href="#RegGen" onclick="toggle_visibility('RegGenFurther');">Further description. </a>-- 
+		  <a href="progs/reggen.zip" target="_blank">Download. </a>
+		  <div id="RegGenFurther" class="furtherDescriptionText">		
+		     <p>
+			This program was designed for use in teaching the statistical
+			procedure known as <i>Regression Analysis </i>.
+			It generates data sets for use as examples or practice problems.
+		     </p>
+		     <p>
+			The user specifies the number of cases (i.e., sample size),
+			the number of variables per case,
+			the mean and standard deviation of each variable,
+			and the matrix of correlations between variables.
+			The program then generates set of data satisfying these conditions exactly
+			(up to some rounding error).
+			The data can be saved to a file for subsequent analysis by a statistical
+			package.
+		     </p>
+		     <p>
+			A critical feature of RegGen is that
+			the generated data satisfy the specified conditions exactly.
+			For example, if you specify that a certain variable should have a mean of 100
+			and an SD of 10, the sample will have exactly that mean and SD.
+			Thus, you specify the sample characteristics directly
+			rather than specifying the underlying population values
+			from which random samples are taken.
+		     </p>
+		     <p>
+			This program and its documentation may be duplicated and used
+			without charge for any educational or noncommercial purposes.
+			For commercial use, please contact the author.
+		     </p>
+		     <a href="#RegGen" onclick="toggle_visibility('RegGenFurther');">Hide Description...</a>
+		  </div> <!-- End div id="RegGenFurther" -->
+	       </p>
+	    </li>
+
+	    <li>
+	       <a href="#" name="t-test"></a>
+	       <em>t-test: </em>A program to help novices compute and interpret t-tests for paired and unpaired data.
+	       <p>
+		  <a href="#t-test" onclick="toggle_visibility('t-testFurther');">Further description. </a>-- 
+		  <a href="progs/ttest.zip" target="_blank">Download. </a>
+		  <div id="t-testFurther" class="furtherDescriptionText">	
+		     <p>
+			This program and its documentation may be duplicated and used
+			without charge for any educational or noncommercial purposes.
+			For commercial use, please contact the author.
+		     </p>
+		     <p>
+			This program was designed to be used by students in lab classes.
+			It is useful when they need to test for differences between means
+			in two conditions, via paired or unpaired t tests.
+			It is a GUI windows-style program, and it guides them through
+			not only the entry of data and computations but also the
+			interpretation of the results.
+		     </p>
+	       </p>
+	       <a href="#t-test" onclick="toggle_visibility('t-testFurther');">Hide Description...</a>
+		  </div>
+	    </li>				
+
+	    <li>
+	       <a href="#" name="r"></a>
+	       <em>r: </em>A program to help novices compute and interpret correlations and regression equations.
+	       <p>
+		  <a href="#r" onclick="toggle_visibility('rFurther');">Further description. </a>-- 
+		  <a href="progs/r.zip" target="_blank">Download. </a>
+		  <div id="rFurther" class="furtherDescriptionText">					
+		     <p>
+			This program and its documentation may be duplicated and used
+			without charge for any educational or noncommercial purposes.
+			For commercial use, please contact the author.
+		     </p>
+		     <p>
+			This program was designed to be used by students in lab classes.
+			It is useful when they need to test for a correlation between two scores.
+			It is a GUI windows-style program, and it guides them through
+			not only the entry of data and computations but also the
+			interpretation of the results.
+		     </p>
+		     <a href="#r" onclick="toggle_visibility('rFurther');">Hide Description.</a> 
+		  </div> <!-- end div id="rFurther" -->
+	       </p>
+	    </li>
+
+	    <li>
+	       <a href="#" name="RandGen"></a>
+	       <em>RandGen: </em>Univariate and multivariate random number generator with arbitrary marginals and correlations.
+	       (This program supercedes a program called Bivar.)
+	       Note: similar functionality is included in the MATLAB version of Cupid on GitHub.
+	       <p>
+		  <a href="#RandGen" onclick="toggle_visibility('RandGenFurther');">Further description. </a>-- 
+		  <a href="progs/randgen.zip" target="_blank">Download. </a>
+		  <div id="RandGenFurther" class="furtherDescriptionText">		
+		     <p>
+			(Version 1.2, May 2003)
+		     </p>
+		     <p>
+			This program was designed for use in generating random numbers
+			for use in randomization procedures, statistical simulation, etc.
+			The numbers can be correlated and they need <em> not </em> have normal marginals.
+		     </p>
+		     <p>
+			The user specifies the number of cases (i.e., sample size),
+			the number of variables per case,
+			the mean and standard deviation of each variable,
+			and the matrix of correlations between variables.
+			The program then generates a random sample from a population satisfying these conditions.
+			The random values are saved to a file for subsequent analysis by a simulation program,
+			statistical package, etc.
+		     </p>
+		     <p>
+			RandGen can be used to generate random variables from many common probability
+			distributions, including the normal, exponential, gamma, Weibull, uniform, and so on.
+			In addition, it can generate random variables from various
+			transformed versions of these distributions (e.g., convolutions, mixtures,
+			order statistics, censored or truncated distributions, etc.).
+			A further strength of RandGen is that the different variables
+			need not all have the same type of probability distribution.
+			For example, it can generate random triples in which the
+			first variable has a normal distribution, the second has
+			a uniform distribution, and the third has an exponential
+			distribution, with user-specified correlations among these variables.
+		     </p>
+		     <p>
+			This program and its documentation may be duplicated and used
+			without charge for any educational or noncommercial purposes.
+			For commercial use, please contact the author.
+		     </p>
+		     <a href="#RandGen" onclick="toggle_visibility('RandGenFurther');">Hide Description...</a>
+		  </div> <!-- End div id="RandGenFurther" -->
+	       </p>
+	    </li>
+
+	    <li>
+	       <a href="#" name="FitDist"></a>
+	       <em>FitDist: </em>Find the best-fitting probability distribution for a data set.
+	       (An earlier version of this program was called DistFit, but that name is trademarked to a commercial product.)
+	       Note: similar functionality is included in the MATLAB version of Cupid on GitHub.
+	       <p>
+		  <a href="#FitDist" onclick="toggle_visibility('FitDistFurther');">Further description. </a>-- 
+		  <a href="progs/fitdist.zip" target="_blank">Download. </a>
+		  <div id="FitDistFurther" class="furtherDescriptionText">		
+		     <p>
+			(Version 1.1, July 2005)
+		     </p>
+		     <p>
+			FitDist is a general-purpose program for fitting probability distributions to
+			sets of observed data values.
+			It can be used for answering such questions as
+			``Are my data better fit by a normal distribution or a gamma distribution?''
+			or ``Are my data consistent with the assumption of a lognormal distribution?''
+			or ``What are the best-fitting logistic distribution parameter values
+			for my data set?''
+		     </p>
+		     <p>
+			FitDist can fit more than 30 statistical distributions, including the normal,
+			uniform, gamma, exponential, lognormal, logistic, Wald, Weibull, binomial,
+			geometric, etc.  It can also fit distributions derived from these by
+			convolution, mixturing, censoring, order statistics, etc. The user provides the
+			observed data, and the program provides the best-fitting parameter estimates
+			for the user-selected distributions. The program runs in a cmd window, with
+			input from text files and output to text files.
+		     </p>
+		     <p>
+			FitDist can fit distributions (i.e., estimate their parameters)
+			either by maximizing
+			the likelihood of a set of data points, by minimizing the chi-square
+			of observed versus predicted frequencies in data bins, by trying to
+			match a set of observed moments of the data set (i.e., mean, variance, etc),
+			or by trying to match certain observed percentiles.
+		     </p>
+		     <a href="#FitDist" onclick="toggle_visibility('FitDistFurther');">Hide Description...</a>
+		  </div> <!-- End div id="FitDistFurther" -->
+	       </p>
+	    </li>
+
+	    <li>
+	       <a href="#" name="MixTest"></a>
+	       <em>MixTest: </em>Perform a likelihood ratio test for a mixture effect, as described by
+	       Miller (2005, <i>Behavioral Research Methods, Instruments, &amp; Computers</i>).
+	       Note: similar functionality is included in the MATLAB version of RawRT on GitHub.
+	       <p>
+		  <a href="#MixTest" onclick="toggle_visibility('MixTestFurther');">Further description. </a>-- 
+		  <a href="progs/mixtest.zip" target="_blank">Download. </a>
+		  <div id="MixTestFurther" class="furtherDescriptionText">		
+		     <p>
+			(Version 1.0, August 2005)
+		     </p>
+		     <p>
+			Suppose you have data consisting of numerical measurements from two
+			conditions--call them "experimental" and "control" conditions--with a
+			significantly higher mean in the experimental condition. This program computes
+			a likelihood ratio test to see whether the difference between the two
+			conditions is a "uniform effect" or a "mixture effect". Intuitively, the idea
+			of a uniform effect is that all of the scores in the experimental condition are
+			increased relative to what they would have been in the control condition. With
+			a mixture effect, however, only some of the scores in the experimental
+			condition are affected; the rest of the scores in this condition are the same
+			as they would have been without the manipulation (i.e., the same as they would
+			have been in the control condition). In addition to analyzing real data to test
+			for uniform versus mixture effects, the program can also be used to generate
+			simulated data to explore the statistical properties of the likelihood ratio test.
+		     </p>
+		     <p>
+			MixTest can test for mixture effects involving more than 30 statistical
+			distributions, including the normal,
+			uniform, gamma, exponential, lognormal, logistic, Wald, Weibull, binomial,
+			geometric, etc.  It can also carry out the test for distributions derived from
+			these by convolution, mixturing, censoring, order statistics, etc.
+			The program runs in a cmd window, with
+			input from text files and output to text files.
+		     </p>
+		     <a href="#MixTest" onclick="toggle_visibility('MixTestFurther');">Hide Description...</a>
+		  </div> <!-- End div id="MixTestFurther" -->
+	       </p>
+	    </li>
+
+	    <li>
+	       <a href="#" name="PMetric"></a>
+	       <em>PMetric and PMetGen: </em>PMetric is a program for probit and/or Spearman-Kaerber analysis of quantal data,
+	       observed in a variety of contexts from psychometric functions to dose-response curves.
+	       PMetGen is a program for computer simulations of data from these types of situations, for use in the analysis of statistical procedures.
+	       Note: similar functionality is included in the MATLAB version of RawRT on GitHub.
+	       <p>
+		  <a href="#PMetric" onclick="toggle_visibility('PMetricFurther');">Further description. </a>-- 
+		  <a href="progs/pmetric.zip" target="_blank">Download. </a>
+		  <div id="PMetricFurther" class="furtherDescriptionText">		
+		     <p>
+			(Version 1.2, May 2003)
+		     </p>
+		     <p>
+			PMetric estimates the parameters of a probability distribution from a data
+			function relating the proportion of a certain (binary) response to a physical quantity.
+			This type of data analysis---often called ``probit'' analysis---is used in
+			several subject areas, including
+			bioassay (analysis of dose/response curves) and
+			psychophysics (analysis of psychometric functions).
+			In brief, the program reads a file containing the observed data (e.g., quantal
+			dose/response curve), and it computes either maximum-likelihood or
+			minimum-chi-square estimates of the parameters (mean, median, standard deviation, etc)
+			of the underlying probability distribution.
+			It also computes the bootstrap standard error of each of each estimate.
+		     </p>
+		     <p>
+			PMetGen generates random data of the sort analyzed by PMetric, for use in power
+			analysis and in computer simulation studies evaluating statistical procedures.
+		     </p>
+		     <p>
+			In bioassay, for example, a researcher might want to determine the
+			relationship between the dosage of a certain herbicide and the probability
+			that a certain weed exposed to that dose will die.
+			In a typical study, each of <I>k</I> different dosages, <I>C_1 ... C_k</I>,
+			is given to <I>N_i</I> different weeds.
+			The number of weeds to actually die at dosage <I>i</I>, <I>G_i</I>, is counted
+			to estimate the effectiveness of that dosage.
+			Such data are typically analyzed with a statistical model assuming that any
+			given weed has a minimum lethal dosage and that the weed dies if and only
+			if it is given a dosage greater than or equal to its minimum lethal dose.
+			Thus, an observed <I>G_i/N_i</I> value is an estimate of the population
+			proportion of weeds for which the lethal dose is less than or equal to
+			<I>C_i</I>.
+		     </p>
+		     <p> 
+			The analogous problem arises in psychophysical research examining psychometric functions.
+			In this case, the <I>C_i</I> values might be intensities of a given auditory tone.
+			The tone is played to an observer <I>N_i</I> times at each intensity value,
+			and each time the observer indicates whether or not he heard it.
+			The statistical model assumes that the observer has a minimum detectable
+			intensity value (fluctuating across time), and that the observer reports
+			hearing the tone on each presentation if and only if it is more intense than
+			the minimum intensity value at that moment.
+			Thus, an observed <I>G_i/N_i</I> value is an estimate of the probability
+			that the instantaneous minimum detectable intensity value
+			is less than or equal to <I>C_i</I>.
+		     </p>
+		     <p> 
+			In standard probit analysis, the underlying probability distribution
+			is assumed to be normal (i.e., Gaussian).
+			PMetric allows this assumption but does not require it.
+			Instead, the user may do the comparable analysis assuming a variety of
+			alternative underlying distributional shapes (e.g., gamma, uniform),
+			and the user may obtain nonparametric estimates using the Spearman-Kaerber method.
+			Based on extensive simulation studies, in fact, we would recommend that the
+			Spearman-Kaerber method be used under a wide variety of circumstances
+			(Miller &amp; Ulrich, 2001; Ulrich &amp; Miller, 2004).
+		     </p>
+		     <a href="#PMetric" onclick="toggle_visibility('PMetricFurther');">Hide Description...</a>
+		  </div> <!-- End div id="PMetricFurther" -->
+	       </p>
+	    </li>
+
+	    <li>
+	    <a href="#" name="Cupid"></a>
+	    <em>Cupid: </em>Computations with common univariate probability distributions.
+	    Computes table values, generates random numbers, estimates parameter values, and much more. Designed more for modeling than for data analysis.
+	    <p>
+	       <a href="#Cupid" onclick="toggle_visibility('CupidFurther');">Further description. </a>-- 
+	       <a href="progs/cupid.zip" target="_blank">Download Windows executable version </a>--
+	       <a href="https://github.com/milleratotago/Cupid" target="_blank"> MATLAB version on GitHub </a>
+	       <div id="CupidFurther" class="furtherDescriptionText">		
+		  <p>
+		     CUPID was designed to accomplish a variety of tasks involving univariate probability distributions. These include:
+		     <UL>
+			<LI><b>Computation:</b>
+			   Compute numerical values of many quantities associated with probability
+			   distributions, including probability densities, cumulative probabilities,
+			   inverse cumulative probabilities, mean, variance, skewness, etc.
+			</LI>
+			<LI><b>Generate Random Numbers</b>
+			</LI>
+			<LI><b>Estimation:</b>
+			   Find the best estimates of the parameters of a distribution to fit a
+			   given data set, with ``best'' defined in terms of one of several alternative
+			   criteria (e.g., maximum-likelihood).
+			</LI>
+			<LI><b>Graphing:</b>
+			   Windows version makes crude (character-screen) plots of the PDF,
+			   CDF, MGF, and Hazard functions.
+			</LI>
+		     </UL>
+		     <p> CUPID knows about a variety of standard and derived probability distributions, including:
+			<UL>
+			   <LI><b>Standard distributions:</b>
+			      <table><tr><td>
+				 <tr><td> Beta         </td><td> Binomial    </td><td> Cauchy         </td><td> Chi-square    </td>
+				    <tr><td> Ex-gaussian  </td><td> Exponential </td><td> Extreme Value  </td><td> F (Fisher's)  </td>
+				       <tr><td> Gamma        </td><td> Laplace     </td><td> Lilliefors     </td><td> Log-normal    </td>
+					  <tr><td> Logistic    </td><td> Normal <td> Poisson </td><td> Pearson's r </td>
+					     <tr><td> Rayleigh <td> Studentized Range </td><td> t (Student's)</td><td> Triangular </td>
+						<tr><td> Uniform <td> Weibull</td>
+			      </table>
+			   </LI>
+			   <LI><b>Transformations:</b>
+			      A very simple derived distribution is a linear transformation of a
+			      primitive one (e.g., an exponential plus a constant).
+			      More complicated transformations include the exponential transform
+			      (e.g., Y = e<sup>X</sup>),
+			      the natural log (Y = ln(X)) and inverse (1/X) transformations,
+			      and power function transformations.
+			      In addition, more complicated transformations can be constructed
+			      by combining several of these.
+			   </LI>
+			   <LI><b>Truncated distributions:</b>
+			      New distributions may be defined by
+			      restricting other distributions to part of their usual range
+			      (e.g., a standard normal restricted to the range from -2 to +2).
+			   </LI>
+			   <LI><b>Mixture distributions:</b>
+			      A new distribution may be formed by randomly selecting a number from one of
+			      several independent distributions (e.g., a number that is equally likely
+			      to be from a normal with mean 10 or mean 20).
+			   </LI>
+			   <LI><b>Convolutions:</b>
+			      A distribution may be formed by summing values from independent distributions.
+			   </LI>
+			   <LI><b>Order distributions:</b>
+			      A distribution may be formed by choosing the i'th order statistic from a
+			      sample of n independent random variables (e.g., the minimum of 10 standard
+			      normals).
+			   </LI>
+			</UL>
+			<H3>User Interface (Windows executable version)</H3>
+			<p>
+			   CUPID is command-driven, and all commands are entered at the program's
+			   prompt (<font face=symbol> &gt; </font
+			   >).
+			   One class of commands tells the program which distribution to use.
+			   For example, typing <tt>Uniform(0,100)</tt> in response to the program
+			   prompt tells the program that it should start performing operations with a
+			   Uniform distribution ranging from 0 to 100.
+			   <p>
+			      Other commands tell the program what quantities to compute.
+			      For example, typing <tt>SD</tt> tells the program to print out the
+			      standard deviation of the distribution currently in use.
+			      There are also a number of commands that control the program (e.g.,
+			      opening an output file for results) rather than doing any statistical
+			      computation.
+			   </p>
+			   <p>
+			      While perhaps not as nice for the novice user as a friendly menu system,
+			      the command-driven approach has the advantage that the program can also take
+			      commands from ASCII files using standard DOS I/O redirection (or even from the command line).
+			      <PRE>
+Here is a brief example CUPID session in the Windows executable version:
+> t(12)
+> mean
+mean = 0
+> sd
+sd = 1.095
+> skewness kurtosis
+skewness = 0
+kurtosis = 3.75
+> cdf(3.112)
+cdf(3.112) = 0.9955
+> inversecdf(.95)
+inversecdf(.95) = 1.782
+> stop
+</PRE>
+<p>
+   The CMD-window-executable program comes with extensive documentation in
+   a variety of formats, including postscript and Adobe PDF.
+   The program and its documentation may be duplicated and used
+   without charge for any educational or noncommercial purposes.
+</p>
+<a href="#Cupid" onclick="toggle_visibility('CupidFurther');">Hide Description...</a>
+	       </div> <!-- End div id="CupidFurther" -->
+			   </p>
+	    </li>
+
+	    <li>
+	       <a href="#" name="RMITest"></a>
+	       <em>RMITest: </em>Test of race model inequality with reaction time data.
+	       Note: similar functionality is included in the MATLAB version of RawRT on GitHub.
+	       <p>
+		  <a href="#RMITest" onclick="toggle_visibility('RMITestFurther');">Further description. </a>-- 
+		  <a href="progs/rmitest.zip" target="_blank">Download. </a>
+		  <div id="RMITestFurther" class="furtherDescriptionText">		
+		     <p>
+			RMITest is useful in the analysis of certain types of reaction time (RT) data from
+			psychological and psychophysical experiments.  Specifically, it can be
+			used in the analysis of "redundancy gain" paradigms, to test for
+			violations of the race model inequality described by Miller (1982,
+			Cognitive Psychology).  You provide RMITest with RTs observed in two
+			single-target conditions and a redundant-targets condition.  It
+			estimates the cumulative probability distributions of RT in the three
+			conditions, and it tests whether the inequality is significantly
+			violated (i.e., whether redundant-target RTs are significantly faster
+			than would be predicted by a race model).  RMITest implements the
+			algorithm described in this article:  Ulrich, R., Miller, J. &amp; Schröter,
+			H. (2007). Testing the race model inequality: An algorithm and computer
+			programs. <I> Behavior Research Methods, 39, </I> 291-302.
+		     </p>
+		     <a href="#RMITest" onclick="toggle_visibility('RMITestFurther');">Hide Description...</a>
+		  </div> <!-- End div id="RMITestFurther" -->
+	       </p>
+	    </li>
+
+	    <li>
+	       <a href="#" name="MrF"></a>
+	       <em>MrF: </em>Analysis of variance (ANOVA) program, menu-driven or batch modes, with automatic adjustments for the use of jackknife scores.
+	       <p>
+		  <a href="#MrF" onclick="toggle_visibility('MrFFurther');">Further description. </a>-- 
+		  <a href="progs/mrf.zip" target="_blank">Download. </a>--
+		  <div id="MrFFurther" class="furtherDescriptionText">		
+		     <p>
+			MrF (``Mister F'') is an Analysis of Variance program.
+			It performs multifactor ANOVA for equal
+			cell size factorial designs (including repeated measures designs)
+			with a single random term in the model (i.e., subjects).
+			The numbers of factors and levels are limited only by the amount
+			of RAM available, and it can handle designs with at least 8 factors
+			(including 4 repeated-measures factors).  MrFub is a version for
+			unequal group sizes, also with adjustments for jackknifing.
+		     </p>
+		     <p>
+			MrF can analyze multiple dependent variables (DVs) on the same run.
+			It can perform some common transformations on the dependent variables.
+			An advanced feature of the program is its ability to
+			restructure a factorial data set using what I call ``translations.''
+			For example, translations allow you to average
+			together or omit certain factor levels,
+			allowing easy analysis of subsets of an overall data set.
+		     </p>
+		     <p>
+			Before using MrF, an ASCII data-file is first prepared using a text editor.
+			or (better yet) written by the data collection program
+			if the data are collected online.
+			Then you start MrF and interactively describe the
+			factorial structure of the desired ANOVA.
+			That is, the program prompts for the information it needs, and waits for you
+			to type in the answer.
+			Most prompts are fairly verbose, so the program is nearly
+			self-documenting after you've used it once or twice.
+		     </p>
+		     <p>
+			After the data file has been described and processed, you view the
+			results interactively.
+			You can view any or all lines of the ANOVA table,
+			including regular p values and p values adjusted with
+			the Geisser-Greenhouse correction where appropriate.
+			Selected cell and marginal means can be displayed in numerical or graphical
+			forms, and you can perform post-hoc comparisons on the means for
+			any single factor, including
+			trend analysis (equally or unequally spaced levels) and four kinds of
+			post-hoc comparisons (LSD, Newman-Keuls, Tukey, and Scheff&#233;).
+			Except for the graphs, any output can be written to a disk file
+			in addition to being displayed on the computer screen.
+			In addition, a ``batch'' version of the program known as MrFb is available
+			for carrying out ANOVA computations without operator intervention.
+		     </p>
+		     <p> 
+			The cmd-window executable program comes with extensive documentation in PDF.
+		     </p>
+		     <a href="#MrF" onclick="toggle_visibility('MrFFurther');">Hide Description...</a>
+		  </div> <!-- End div id="MrFFurther" -->
+	       </p>
+	    </li>
+
+	    <li>
+	       <a href="#" name="SDI"></a>
+	       <em>SDI: </em>Sampling Distribution Illustrator: A windows program to illustrate the statistical concept of a sampling distribution.
+	       <p>
+		  <a href="#SDI" onclick="toggle_visibility('SDIFurther');">Further description. </a>-- 
+		  <a href="progs/sdi.zip" target="_blank">Download. </a>
+		  <div id="SDIFurther" class="furtherDescriptionText">		
+		     <p>
+			The concept of a "sampling distribution" is one of the most important
+			concepts in statistics, but it is also one of the most difficult. This
+			program was designed to help students learn about this concept. It uses
+			computer simulation to show what a sampling distribution is and how it
+			could be constructed. A tutorial guides students through the initial
+			learning process. Subsequent demonstrations allow them to examine
+			sampling distributions for sample means (e.g., the central limit
+			theorem), proportions, minima, maxima, and standard deviation from a
+			variety of different population distributions.
+		     </p>
+		     <a href="#SDI" onclick="toggle_visibility('SDIFurther');">Hide Description...</a>
+		  </div> <!-- End div id="SDIFurther" -->
+	       </p>
+	    </li>
+	 </ul>
+	 </li>
+	 <li>Utilities:
+	 <ul>
+	    <li>
+	       <a href="#" name="DirC"></a>
+	       <em>DirC: </em>A command-line program to compare and synchronize directories. DirC was
+	       designed for synchronizing directories across drives (eg master/slaves),
+	       with optional recursion through subdirectories. It is also useful for
+	       maintaining synchronized home and office machines via an intermediary portable drive.
+	       <p>
+		  <a href="#DirC" onclick="toggle_visibility('DirCFurther');">Further description. </a>-- 
+		  <a href="progs/dirc.zip" target="_blank">Download. </a>
+		  <div id="DirCFurther" class="furtherDescriptionText">		
+		     <p>
+			(Version 1.0, Feb 2005)
+		     </p>
+		     <p>
+			DirC was designed to help maintain synchronized sets of files in two
+			different directories.  It compares the files of the two directories, copying
+			(or deleting) files in one directory that are newer (or older, or match, or
+			mismatch, etc) relative to files of the same name the other directory.
+			Optionally, it operates recursively to include subdirectories.
+		     </p>
+		     <p>
+			I use it mainly to:
+			(1) Synchronize sets of files on two different disk drives (primary and backup
+			drives, local development drive and network drive for public access, etc).
+			(2) Synchronize files on my home and office machines, using a USB memory
+			stick as a go-between.  When I leave the office I run DirC to update the memory
+			stick with the latest office files, and when I arrive home I run DirC again to
+			update the home machine with the latest files from the stick.  And of course
+			vice versa when I go from home to office.
+		     </p>
+		     <p>
+			DirC is strictly a command-line program, run from a cmd window or batch file. 
+			Here are two quick examples to illustrate how it works, showing what
+			you type at the command prompt and what the program does:
+			<PRE>
+1. C:MyWork> DirC *.cpp;*.hpp;*.doc a: CopyFrom1 Newer1
+This command copies the files with the extensions cpp, hpp, and doc from the
+current directory of the current drive to the current directory of a:, copying
+only files that are newer in the source directory (current) than in the
+destination directory (a:).
+
+2. C:MyWork> DirC *.zip a:. delete2 matches
+Delete any a:*.zip files that match *.zip files. "Matches" means
+with respect to date, time, and length.
+</PRE>
+<a href="#DirC" onclick="toggle_visibility('DirCFurther');">Hide Description...</a>
+		  </div> <!-- End div id="DirCFurther" -->
+		     </p>
+	    </li>
+
+	    <li>
+	       <a href="#" name="ChDirPlus"></a>
+	       <em>ChDirPlus: </em>This is a set of four command-line programs for
+	       changing directories within a command-line window. One lets you use a
+	       mouse to navigate through a directory structure, with some shortcuts based
+	       on memory of which directories you have visited recently. The other two
+	       provide command-line shortcuts so that, eg, you don't have to type the
+	       full name of a directory that you want to change into.
+	       <p>
+		  <a href="#ChDirPlus" onclick="toggle_visibility('ChDirPlusFurther');">Further description. </a>-- 
+		  <a href="progs/chdirplus.zip" target="_blank">Download. </a>
+		  <div id="ChDirPlusFurther" class="furtherDescriptionText">		
+		     <p>
+			(Version 2.1, Feb 2004)
+		     </p>
+		     <p>
+			ChDirPlus is a set of four separate utility programs to make it easier to
+			change directories, in place of the good old "cd" command.  For example, one
+			program lets you navigate around your directory tree by pointing and clicking
+			with the mouse, quitting when you find the directory you want. There is one set
+			of programs for use with Windows in command-line windows (also known as "DOS
+			windows"), and an equivalent set for use with plain old DOS (e.g., 6.22).  If
+			you use the command "cd" more than a few times per day, then you will find it
+			worthwhile to learn about these utilities. These utilities have been tested
+			successfully under Windows 2000, XP, and 7, and under DOS 6.22, but probably also
+			work under other versions of Windows and DOS.
+		     </p>
+		     <p>
+			CDM (M is for mouse) is a mouse-based utility that allows you to traverse a
+			directory tree by pointing and clicking with the mouse to navigate up and down
+			the directory tree structure, starting at the current directory. You simply
+			quit when you reach the directory you want to be in, and the command-line
+			window will then show this new directory as its current one.  Alternatively,
+			CDM lets you jump instantly to one of the directories that you visited
+			recently.  It is also possible to use this jump feature directly from the
+			command line, without touching the mouse.
+		     </p>
+		     <p>
+			CDP (P is for partial) allows you to change into a subdirectory of the current
+			directory by typing just part of the subdirectory name.  For example, you could
+			change into a subdirectory "Really long subdirectory name" just by typing a
+			unique part of that name, as in the following example:
+			(In all examples in this file, the upper case text indicates the operating
+			system's command prompt and the lower case text is what the user types.)
+			<PRE>
+C:\DOCUMENTS AND SETTINGS\JEFF\PAPER1> cdp long
+C:\DOCUMENTS AND SETTINGS\JEFF\PAPER1\REALLY LONG SUBDIRECTORY NAME>
+</PRE>
+		     </p>
+		     <p> 
+			CDS (S is for substitution) allows you to change into a variant of the current
+			directory by substituting something new for part of the current path name.  As
+			an example, you could switch from a directory called Paper1 to one called
+			Paper2 with "cds 1 2" as in the following example:
+			<PRE>
+C:\DOCUMENTS AND SETTINGS\JEFF\PAPER1> cds 1 2
+C:\DOCUMENTS AND SETTINGS\JEFF\PAPER2> 
+</PRE>
+		     </p>
+		     <p> 
+			CDD (D is for drive) allows you to change to a new target drive at the same
+			time as you change directory.  For example,
+			<PRE>
+C:> cdd D:\TEMP
+</PRE>
+will change to directory TEMP on drive D.
+		     </p>
+		     <a href="#ChDirPlus" onclick="toggle_visibility('ChDirPlusFurther');">Hide Description...</a>
+		  </div> <!-- End div id="ChDirPlusFurther" -->
+	       </p>
+	    </li>
+
+	    <li>
+	    <a href="#" name="BudgetCluster"></a>
+	    <em>BudgetCluster: </em>BudgetCluster is a set of MATLAB routines
+	    designed to run a (potentially) long series of slow tasks
+	    in parallel across multiple networked computers (e.g., statistical simulations).
+	    Each task must be carried out by a single MATLAB function written by the user,
+	    and that function must be runnable in MATLAB on any of the computers.
+	    The BudgetCluster routines automatically assign tasks to computers,
+	    with each computer receiving a new task when it finishes its previous task.
+	    Thus, each computer runs one task at a time until all the tasks in the series have been completed.
+            The routines are available as a package on MATLAB's File Exchange,
+	    and detailed step-by-step instructions are included in the accompanying documentation.
+	    <p>
+	    </p>
+	    </li>
+
+	    <li>
+	    <a href="#" name="SimControl"></a>
+	    <em>SimControl: </em>SimControl is a collection of programs (exe and bat
+	    files) designed to manage the running of many tasks (e.g., statistical
+	    simulations) across one or more networked computers running Windows. Each
+	    task is carried out by a batch file prepared by the user, and that batch
+	    file is run in a cmd window on one computer. The SimControl programs
+	    automatically assign the tasks to computers, start the tasks, and take
+	    note of when each task finishes. Thus, each computer runs one task at a
+	    time until all the tasks have been completed. All tasks are run at low
+	    priority, so people using the computers for other purposes should notice
+	    little if any degradation of performance.
+	    <p>
+	       <a href="#SimControl" onclick="toggle_visibility('SimControlFurther');">Further description. </a>-- 
+	       <a href="progs/simcontrol.zip" target="_blank">Download. </a>
+	       <div id="SimControlFurther" class="furtherDescriptionText">		
+		  <p>
+		     (Version 1.1, Jan 2005)
+		  </p>
+		  <p>
+		     Overview:
+		     <ul>
+			<li> The user prepares a list of the tasks to be carried out in a file called
+			TaskList.Txt.  Each task is associated with a batch file that will run it.
+			<li> The user starts the program Master.Bat on one computer.  This program
+			assigns new tasks to one or more free slave computers as they come online
+			or finish their previous tasks.
+			<li> The user starts the program Slave.Bat on each slave computer.  This program
+			sets up the slave computer to request tasks from the master computer and
+			to perform those tasks when they are assigned to it.
+			<li> The same computer can serve as both the Master and a Slave.
+			<li> If there are multiple Slave computers, they must all have access to a
+			shared directory (i.e., on a network).  The path to this directory is called
+			the MasterPath.
+			<li> Optionally, the user can set up the files so that email notifications will be
+			sent (a) each time a simulation is finished, and/or (b) when there is at
+			least one idle computer needing a new task assignment.
+		     </ul>
+		  </p>
+		  <p>
+		     Summary of steps:
+		     <ul>
+			<li> Set up the programs for simulation management (one time only).
+			<li> Set the paths in SetPaths.Bat
+			<li> Create a TaskList.txt file listing the individual tasks.
+			<li> If batch files or templates are used in step 2, it will be necessary
+			to create the batch or template files to carry out the individual tasks.
+			<li> Reset or delete TaskList.Dat
+			<li> Start Master.bat on any one machine.
+			<li> Start Slave.bat on each slave machine.
+		     </ul>
+		  </p>
+		  <p>
+		     Detailed step-by-step instructions are included in the documentation.
+		  </p>
+		  <p> 
+		  </p>
+		  <p> 
+		  </p>
+		  <a href="#SimControl" onclick="toggle_visibility('SimControlFurther');">Hide Description...</a>
+	       </div> <!-- End div id="SimControlFurther" -->
+	    </p>
+	 </ul>
+
+	 <li>Other:
+	 <ul>
+
+	    <li> <em>RawRT:</em> MATLAB software for analyzing reaction time (RT) experiments and (to some degree)
+	    psychophysical experiments.
+	    The idea is to read in raw data files containing the individual-participant results in a trial-by-trial format,
+	    and then to carry out the full analysis all the way to reportable statistical tests (e.g., ANOVA).
+	    Currently supported analyses (at least to some degree) include:
+	    <ul>
+	       <li> Identification and exclusion of outliers, both participants and single trials.
+	       <li> Compute and plot condition means, medians, etc.
+	       <li> Factorial ANOVA of within-condition means, medians, etc.
+	       <li> Sequential analyses.
+	       <li> Distributional analyses and delta plots.
+	       <li> Tests of the race model inequality.
+	       <li> Scoring of the signal-detection theory measures d' and beta for a yes/no task.
+	       <li> Spearman-K&auml;rber analysis of psychometric functions, with optional bootstrapping.
+	    </ul>
+	    <a href="https://github.com/milleratotago/RawRT" target="_blank"> On GitHub </a>
+	       </li>
+
+	    <li> <em>PlotTbl:</em> A MATLAB routine for conveniently ploting multiple lines of
+            table data on a single plot or across multiple sublpots. Use line types, marker types, color,
+	    etc to distinguish among different variables and/or conditions (where conditions are coded by other variables in the table).
+	    <a href="https://github.com/milleratotago/PlotTbl" target="_blank"> On GitHub </a>
+	       </li>
+
+	       <li> <em>fminsearcharb:</em> A wrapper for MATLAB's fminsearch that allows arbitrary constraints
+		  on parameters, including the constraint to be integers.
+		  <a href="https://github.com/milleratotago/fminsearcharb" target="_blank"> On GitHub </a>
+	       </li>
+
+	       <li> <em>ExtractNameVal:</em> A few handy MATLAB functions for handling optional name/value pairs.
+		  <a href="https://github.com/milleratotago/ExtractNameVal" target="_blank"> On GitHub </a>
+	       </li>
+
+	       <li>
+		  <em>BigTime: </em>This is a digital clock that can be made as large as your whole computer
+		  screen for good visibility. It has a count-down mode that is useful when giving timed tests.
+		  <p>
+		     <a href="progs/bigtime.zip" target="_blank">Download. </a>
+		  </p>
+	       </li>
+
+	       <li>
+		  <a href="#" name="Crossfire"></a>
+		  <em>Crossfire: </em>This is a space-invaders type of game played in a grid. It is a true GUI program that I wrote to learn Delphi.
+		  <p>
+		     <a href="progs/crossfire.zip" target="_blank">Download. </a>
+		     <div id="CrossfireFurther" class="furtherDescriptionText">		
+			<p>Control your own spaceship...manoeuver around in a grid and try to shoot enemy ships (as they try to shoot you).</p>
+			<p>Use the keyboard to control your ship.  Move up, down, left, or right with four keys on one side, and shoot up,
+			   down, left, or right with four keys on the other side, as shown in the diagram below.</p>
+			<p>When your ammo gets low, try to run your ship over one of the square ammo caches that appear from time to time.
+			   But you have to hurry--they don't stay long.</p>
+			<p>The level of difficulty is adjustable.</p>
+			<a href="#Crossfire" onclick="toggle_visibility('CrossfireFurther');">Hide Description...</a>
+		     </div> <!-- End div id="CrossfireFurther" -->
+		  </p>
+	       </li>
+
+	       <li>
+		  <a href="#" name="EHICmd"></a>
+		  <em>EHI in a CMD window: </em>This program administers and scores the Edinburgh Handedness Inventory,
+		  saving detailed results to a file. It runs in a CMD window.
+		  <p>
+		     <a href="#EHICmd" onclick="toggle_visibility('EHICmdFurther');">Further description. </a>-- 
+		     <a href="progs/ehi.zip" target="_blank">Download. </a>
+		     <div id="EHICmdFurther" class="furtherDescriptionText">		
+			<p>
+			   (Version 1, April 2004)
+			</p>
+			<p>
+			   This program can be used to collect and score responses to the Edinburgh
+			   Handedness Inventory, as published by Oldfield (1971). Each participant is
+			   given a handedness score based on his or her responses to the items of the
+			   inventory, and the individual's responses are stored in a file for further
+			   tabulation by another program (e.g., Excel).  The EHI program runs under DOS or
+			   Windows (in a cmd window), and it is free software.  The program requires the
+			   user to enter responses with a mouse, so it can only be used if a mouse is
+			   available (this may be tricky under DOS).
+			</p>
+			<p>
+			   To start the program in windows, you can double-click on EHI.EXE, or you can
+			   open a cmd window and type EHI at the command prompt. You will then see a
+			   form that looks approximately like the mock screen shown below:
+			   <PRE>
+==============================================================================
++--------------------------------------+
+Click on the SubjectID box to enter:  | SubjectID                            |
+(Type ENTER key when done)            +--------------------------------------+
+
+Please click on the circle next to your gender:   o Male   o Female
++------+
+Click on the AGE box to enter: | Age  |  (Type ENTER key when done)
++------+
+E d i n b u r g h   H a n d e d n e s s   I n v e n t o r y
+Left   Right
+_ _    _ _   Writing
+_ _    _ _   Drawing
+_ _    _ _   Throwing
+_ _    _ _   Scissors
+_ _    _ _   Toothbrush
+_ _    _ _   Knife (without fork)
+_ _    _ _   Spoon
+_ _    _ _   Broom (upper hand)
+_ _    _ _   Striking match
+_ _    _ _   Opening box (lid)
+_ _    _ _   Which foot do you prefer to kick with?
+_ _    _ _   Which eye do you use when using only one eye?
++------+
+Please click on this box when you are all done with this form: | DONE |
++------+
+</PRE>
+You can enter information onto the form by pointing and clicking with the mouse.
+			</p>
+			<p>
+			   By default, the information is stored in a file called EHI.Txt.  Each
+			   successive participant is added onto the end of this file, so you can
+			   accumulate a large number of participants over many runs of the program.							</p>
+			<p> 
+			   The output file has one line per participant, with different pieces of
+			   information stored in tab-delimited columns.  Here is a summary of the
+			   contents of each column.  Items marked * are described further below.
+			   <PRE>
+Column  Information
+1     Subject ID (any sequence of characters)
+2   * Total score based on the first 10 items of the inventory
+3   * Total score based on all 12 items of the inventory
+4     Participant's age
+5     Participant's gender (coded 0 = male, 1 = female)
+6-17  * Hand preference responses for each of the 12 activities on the form.
+18     Date when the form was filled out.
+19     Time when the form was filled out.
+20     MachineID (any sequence of characters)
+</PRE>							</p>
+<p> 
+   The program has a number of optional features that can be controlled via
+   command-line parameters when you invoke the program, as described in the documentation.
+</p>
+<a href="#EHICmd" onclick="toggle_visibility('EHICmdFurther');">Hide Description...</a>
+		     </div> <!-- End div id="EHICmdFurther" -->
+		  </p>
+	       </li>
+
+	       <li>
+		  <em>EHI in MATLAB: </em>This set of three MATLAB scripts administers and scores the Edinburgh Handedness Inventory,
+		  provides feedback about handedness to the person filling out the inventory, and allows saving of detailed
+		  results to a file. It runs in a MATLAB GUI window.
+		  <p>
+		     <a href="http://www.mathworks.com/matlabcentral/fileexchange/41720">Download.</a>
+		  </p>
+	       </li>
+
+	       <li>
+		  <a href="#" name="IMPPairs"></a>
+		  <em>IMPPairs: </em>This GUI program was written for use in running an IMP pairs bridge tournament in a Swiss format. It determines which pairs should play one another (initially random, then Swissing). You enter the scores for each deal at each table, and it IMPs the results, converts the IMP totals to victory points, and determines pairings for the next round.
+		  <p>
+		     <a href="#IMPPairs" onclick="toggle_visibility('IMPPairsFurther');">Further description. </a>-- 
+		     <a href="progs/imppairs.zip" target="_blank">Download. </a>
+		     <div id="IMPPairsFurther" class="furtherDescriptionText">		
+			<p>
+			   (August 2002)
+			</p>
+			<p>
+			   This program is designed to be used for running an IMP pairs bridge event. It
+			   runs on IBM-PC compatible computers under the Windows operating system. The
+			   program can handle events in either a Swiss format or a round-robin format.
+			</p>
+			<p>
+			   The program generates the draw for each round, either randomly or using a
+			   Swissing procedure based on the results of a previous round. After the round
+			   has been played, you must enter the north-south raw score for each board at
+			   each table (e.g., +110, -650). From those numbers, the program
+			   automatically computes the datum for each board, computes an IMP score against
+			   the datum for each pair/board, and computes each pair’s total IMPs and
+			   victory points (VPs) for that round. Across rounds,
+			   it keeps track of total VPs for each pair to determine
+			   the winner (and for purposes of
+			   Swissing).
+			</p>
+			<p>
+			   Documentation included with the program describes in detail how to use it. I
+			   assume that you are already familiar with (a) the basic ideas of an IMP pair
+			   event, and (b) using mouse-based Windows programs. If not, you may need to line
+			   up an expert assistant to help you through the first time.
+			</p>
+			<p> 
+			   You may copy and use this program and documentation freely as long as you do
+			   not alter either one. I would appreciate it if you would let me
+			   know if you use the program by emailing me (address in documentation).
+			   It will be rewarding for me to know that my programming efforts have been
+			   useful to the bridge community. Of course you can also send me bug reports and
+			   suggestions of additional features needed.
+			</p>
+			<p> 
+			   An important limitation of this program is that it will work correctly only if
+			   you have an even number of pairs (i.e., no half tables). When organizing the
+			   event, make sure you find a reserve pair that will play or not as needed
+			   to make an even number of pairs on the day.
+			</p>
+			<a href="#IMPPairs" onclick="toggle_visibility('IMPPairsFurther');">Hide Description...</a>
+		     </div> <!-- End div id="IMPPairsFurther" -->
+		  </p>
+	       </li>
+
+	       <li>
+		  <em>Collect Likert scale questionnaires in MATLAB: </em>This MATLAB function opens a MATLAB GUI window to collect responses to a Likert scale questionnaire.  When you call the function, you define the questionnaire items, the Likert scale, and some display parameters.  The function then displays the questionnaire and collects the responses, returning them in a vector.
+		  <p>
+		     <a href="http://www.mathworks.com/matlabcentral/fileexchange/46327">Download.</a>
+		  </p>
+	       </li>
+
+	       <li>
+		  <a href="#" name="PBNToPar"></a>
+		  <em>PBNToPar: </em>This command-line program reads bridge hands in portable bridge notation (PBN) format and determines for each one the double-dummy par result.
+		  <p>
+		     <a href="#PBNToPar" onclick="toggle_visibility('PBNToParFurther');">Further description. </a>-- 
+		     <a href="progs/pbntopar.zip" target="_blank">Download. </a>
+		     <div id="PBNToParFurther" class="furtherDescriptionText">		
+			<p>
+			   (Version 1.0, Jan 2005)
+			</p>
+			<p>
+			   This program computes the double-dummy par result for each bridge hand
+			   in an input file saved in portable bridge notation (PBN) format. The
+			   par result, contract, number of tricks taken, etc, are written to
+			   a plain text output file. The program runs in a CMD window (also known
+			   as a DOS window) at least under Windows 2000 and XP.
+			</p>
+			<p>
+			   You also need to download the file GIB.exe (i.e., the double-dummy solver
+			   program written by Matthew Ginsberg), which you could previously get from here:
+			   ftp://ftp.cirl.uoregon.edu/pub/users/ginsberg/bridge/gib.exe
+			   (I'm not sure where it is available now).
+			   <!-- NEWJEFF: This should be a link, but anyway the link is no longer valid. -->
+			   Put gib.exe in the same directory where you put pbntopar.exe.
+			</p>
+			<p>
+			   To run PBNToPar:
+			   <PRE>
+o Open a cmd or "dos" window (Start -> Run -> CMD)
+o Use chdir to change into the directory that holds the PBN file(s)
+you want to process.
+o Type "PBNToPar Filename [enter]"
+</PRE>
+The input PBN file should be called Filename.PBN, and the output file
+will be called Filename.Par.  Obviously, Filename can be any name you
+like.  For example, you could type "PBNToPar Sample" to process the
+sample PBN file included with this distribution.
+			</p>
+			<p> 
+			   The results are written to a tab-delimited plain-text file with the same name
+			   as the input PBN file, but with the extension .par. Each line in the file
+			   corresponds to one deal in the input file. The output file columns on
+			   each line are as follows:
+			   <PRE>
+Col  Contents
+1   Board number
+2   Par NS score
+3   Par contract level (1-7; 0 for passout)
+4   Par contract denomination (1-5 for clubs, diamonds, hearts, spades, notrump, respectively).
+5   Par declarer (1=north, 2=south, 3=east, 4=west)
+6   Number of tricks taken by north at clubs
+7   Number of tricks taken by north at diamonds
+8   Number of tricks taken by north at hearts
+9   Number of tricks taken by north at spades
+10   Number of tricks taken by north at notrump
+11   Number of tricks taken by south at clubs
+12   Number of tricks taken by south at diamonds
+13   Number of tricks taken by south at hearts
+14   Number of tricks taken by south at spades
+15   Number of tricks taken by south at notrump
+16   Number of tricks taken by east at clubs
+17   Number of tricks taken by east at diamonds
+18   Number of tricks taken by east at hearts
+19   Number of tricks taken by east at spades
+20   Number of tricks taken by east at notrump
+21   Number of tricks taken by west at clubs
+22   Number of tricks taken by west at diamonds
+23   Number of tricks taken by west at hearts
+24   Number of tricks taken by west at spades
+25   Number of tricks taken by west at notrump
+</PRE>
+			</p>
+			<a href="#PBNToPar" onclick="toggle_visibility('PBNToParFurther');">Hide Description...</a>
+		     </div> <!-- End div id="PBNToParFurther" -->
+		  </p>
+	       </li>
+	 </ul>
+   </div> <!-- end div id="software" -->
+
+   <div id="footer">
+   </div> <!-- end div id="footer" -->
+
+</div> <!-- div id="container" -->
+</body>
+
+</html>
+
