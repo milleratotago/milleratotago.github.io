@@ -87,11 +87,7 @@ function addFooter()
 	var newSPAN = document.createElement('span');
 	newSPAN.setAttribute('class','update');
         /* NewJeff: Change last update, separately for BIB & RIS files in publications.htm */
-<<<<<<< Updated upstream
-	newSPAN.appendChild(document.createTextNode('Last update: 21 September, 2021'));
-=======
 	newSPAN.appendChild(document.createTextNode('Last update: 11 October, 2021'));
->>>>>>> Stashed changes
 	newAddr.appendChild(newSPAN);
 	footerDiv.appendChild(newAddr);
 
