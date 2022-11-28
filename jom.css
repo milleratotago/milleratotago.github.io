@@ -159,7 +159,8 @@ a:hover
 }
 
 
-#contact, #studentInfo, #confPosters, #publications, #researchTopics, #software, #glmBook
+/* #contact, #studentInfo, #confPosters, #publications, #researchTopics, #software, #glmBook */
+#contact, #confPosters, #publications, #researchTopics, #software, #glmBook
 {
 	margin-top: 70px;
 	font-size: 1.15em;
@@ -182,7 +183,8 @@ a:hover
 	padding: 1px;
 }
 
-#researchTopics li, #studentInfo li, #confPosters li
+/* #researchTopics li, #studentInfo li, #confPosters li */
+#researchTopics li, #confPosters li
 {
 	padding: 8px;
 }

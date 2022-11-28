@@ -15,9 +15,9 @@ function init()
                           ];  */
 
 /* Holds the literal strings required for building the nav. Allows us to make all the buttons in a nice for loop */
+/* ["StudentInfo.htm", "Student Info"],  */  /* was after Research */
 var tocItemsData = [	["index.htm", "Contact & ID"],
 						["Research.htm", "Research"],
-						["StudentInfo.htm", "Student Info"],
 						["Software.htm", "Free Software"],
 						["StatsBook.htm", "Stats Book"],
 						["Publications.htm", "Publications"],
@@ -87,7 +87,7 @@ function addFooter()
 	var newSPAN = document.createElement('span');
 	newSPAN.setAttribute('class','update');
         /* NewJeff: Change last update, separately for BIB & RIS files in publications.htm */
-	newSPAN.appendChild(document.createTextNode('Last update: 12 September, 2022'));
+	newSPAN.appendChild(document.createTextNode('Last update: 29 November, 2022'));
 	newAddr.appendChild(newSPAN);
 	footerDiv.appendChild(newAddr);
 
