@@ -42,7 +42,7 @@ function addHeader()
 	var headerDiv = document.getElementById('header');
 
 	var newP = document.createElement('p');
-	var newTxt = document.createTextNode('Professor Jeff Miller');
+	var newTxt = document.createTextNode('Emeritus Professor Jeff Miller');
 	newP.appendChild(newTxt);
 	headerDiv.appendChild(newP);
 
@@ -87,7 +87,7 @@ function addFooter()
 	var newSPAN = document.createElement('span');
 	newSPAN.setAttribute('class','update');
         /* NewJeff: Change last update, separately for BIB & RIS files in publications.htm */
-	newSPAN.appendChild(document.createTextNode('Last update: 2025-10-18'));
+	newSPAN.appendChild(document.createTextNode('Last update: 2026-02-07'));
 	newAddr.appendChild(newSPAN);
 	footerDiv.appendChild(newAddr);
 
